@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="interactive.css">
+
+</head>
+<body>
+    <h1>Home Page</h1>
+     <div class="dropdown">
+  <button class="dropbutton">Menu/My Projects</button>
+  <div class="options">
+       <!--links multiple pages into the drop down menu-->
+          <a href="https://preview.c9users.io/jumpman23/csportfolio/int3-checkpoints/calc.html?_c9_id=livepreview3&_c9_host=https://ide.c9.io">Calculator</a>
+    <a href="https://preview.c9users.io/jumpman23/csportfolio/aboutme-howto.html?_c9_id=livepreview5&_c9_host=https://ide.c9.io">About Me/How To</a>
+    <a href="https://preview.c9users.io/jumpman23/csportfolio/art.html?_c9_id=livepreview6&_c9_host=https://ide.c9.io">My Art</a>
+     <a href="https://preview.c9users.io/jumpman23/csportfolio/art-howto.html?_c9_id=livepreview7&_c9_host=https://ide.c9.io">My Art-How To</a>
+
+  </div>
+</div>
+
+<h1>Interactive - How To</h1>
+
+ <!--The following is the text that will show up on the webpage as well as the images.-->
+    <div style="border:solid;  border-color: coral;">
+    <h1>
+    What I Created
+    </h1>
+    
+    <p1 style="text-align: justify;">In this session we built off what we had previously learned with javascirpt and HTML to make it more interactive and usable for the user. This time we got an 
+    introduction into using addEventListeners as well as getElements. We also were introduced to DOM functions and innerHTML. Using these we began applying 
+     them to different interactive aspects such as changing color or moving objects with buttons.Before wroking on my interactive page, I completed 3 checkpoints prior, these helped to develop the simple skill of being able to create an input and have some sort of output occur. Finally when we built a calculator in the final checkpoint we were introduced into creating functions that actually completed some form of calculations and ran through an if else statement before making a decision and displaying an output.
+     
+         <br><strong>Image Below:</strong> <br> </p1>
+    
+    <img src="Screenshot 2019-03-28 at 2.46.24 PM.png" class="center"> <br>
+     
+     <img src=" Screenshot 2019-03-28 at 2.59.40 PM.png" class="center2">
+     
+    </div>
+    <div style="border:solid; margin:5px; border-color: coral;" >
+    <h1>
+        Specifics/Code
+    </h1>
+    
+    
+    <p2> <strong>addEventListeners:</strong> Starting of the project we were introduced to <mark>addEventListeners</mark>. The main function for addEventListeners is so that you can add as specific effect or result of an input from the user such as a click,hover, etc.
+    You can use these addEventListeners to place a certain function for one property or item, such as a object or button. They can be used to carry out a function for a whole set of objects. The image below displays a <mark> for loop </mark> using an array. If you look at the html code, you can see that each button has been assigned a <mark>class</mark>.
+    Once so, we can go back to our javascirpt and write a <mark>getElementsByClassName</mark> with a variable assigned to it. The class name it will call will be the same as the one we assigned to all the buttons in the HTML file.
+    We have now created an array. Finally the for loop uses this array to add a click property to all the buttons with only one line of code. But this isn't the only way to complete this task of adding a click property to the buttons. 
+    As I began building my calculator using an <mark>array</mark> wasn't my first choice. I originally started with a seperate onclick property for each single button in the calculator and connecting it to my javascript function. But later decided to use and array and addEventListener
+    instead due to the convienience of having it all connected into one line of code.
+        </p2>
+    
+    
+    <img src="Screenshot 2019-03-28 at 8.54.03 PM.png" class="center3"> <br>
+       <img src="Screenshot 2019-03-28 at 9.01.29 PM.png" class="center2" > <br>
+    <img src="Screenshot 2019-03-28 at 3.26.18 PM.png" class="center3" > <br>
+    
+    
+    
+    
+    
+    
+    
+    <p3>
+        <strong>getElementsByClassName/ById:</strong> Alongside the addEventListener we had to use <mark>getElementsByClassName</mark>. As shown before we used this to create the array we would call using the for loop. 
+        We created a variable and set that varibale to call the <mark>Id</mark> or <mark>Class</mark> we had set in the HTML file. And once we have done this we can use it multiple times to assign different properties and functions to it. 
+        Such as the click property we added. For the specifics of the for loop. To start off we assigned the value zero to a variable <mark>var i = 0</mark>. This is important because this is how the program will have to make a decision on it's own.
+        Then we tell it that if the value of i is less then the array of values on the calculator, <mark>i < calcbutton.length;</mark>, add the click property to <mark>i</mark>. This is an example of telling the program to listen for an event that takes place on the webpage from the user,
+        and the decision the program has to make based of the information we have told it.     <br>
+
+        
+        
+        </p3>
+
+    
+    
+   
+    
+    <p5><strong><br>innerHTML: </strong> The <mark>innerHTML</mark> property can be used in javascirpt to maniuplate the HTML page alongside with the outher DOM functions as I mentioned before such as getElementById/classname.
+    By using innerHTML I was able to complete the function for my calculator. The image below displays the function I wrote that tells the program what to display when certain buttons are pressed.
+    The function says <mark>if (clicked == '=')</mark> then <mark>eval(input.innerHTML);</mark>. This first part states that if the equals sign is clicked then call the innerHTML for the whatever is attached to the <mark>id</mark> I created "input".
+    In this case I assigned the id to the table I made that contains the content for my calculator. The rest states that if that is not true then display a value of zero if "AC" button is pressed, as well as if the value is 0 that means it has been clicked.
+    
+    </p5>
+    
+        <img src="Screenshot 2019-03-28 at 10.28.47 PM.png" class="center3" > <br>
+
+    
+    
+    
+    
+    </div>
+    <h1>What decisions did I have to make?</h1>
+    
+    <p6> When programming there were multiple choices I had to make starting with my color choices to the font size, up to the orientation of the images and text on the page.
+        With the headers I had to decide whcih font I was  going to use, the color it was and the placement of the header. One of the important choices I made when
+        it came to appearence was the color for the headers and the background. I had go through various color options to find one where the color of the headers 
+        matched the color of the background. I ended up with a blue colored theme for my webpage. But colors weren't the only desicion I had to make. One of the most important components on a website is the orientation of the the images and text. On my website a desicion I made regarding this was deciding to center the image list of the all my hobbies.
+        I came to this desicion due to how I felt it would make the website more appealing and attractive. These decisions were for asthetics, but I also had to make decisions when it came to the technical side of the code and program. One instance is when I had to decide whether I was going to add a seperate onclick function to each
+        calculator button or find a simpler way. After asking for help and researching I figured how to complete the same function with only few simple lines of code. I ended up create an array in which I used a for loop with an addEventListener to complete the same task that took around 15 onclick functions to do the same job.
+        
+        
+        </p6>
+        
+        <h1>How has my view of HTML and JS changed?</h1>
+        
+    <p6> 
+    Originally before I started this class I had some knowledge about HTML. Now after completing my 3rd session in this class, I feel I have established a strong and wroking understanding of the basics of both HTML and Javascript. As well as to creating a foundation for the languages, I think this class has helped cement my passion in coding and software. Coming into this class I knew what these languages were used for as well as had messed around with them. I had already learned python and c++ but never really done JS and HTML But after starting this class and 
+    really learning the basics of the coding in HTML and Javascript it started to interest me in learning and developing my skills with it even more on my own. 
+    I started researching more on things that I hadn't learned in class. And now I've become more interested in learning more about what can be done with HTML, JS, css and other languages. 
+    
+    </p6>    
+    
+    <h1>
+        What would I have done differently
+        
+    </h1>
+    
+    <p6>Somethings I wanted to incorporate and learn more about is a more interactive navbar as well as adding more customization to the website. So far my main interactive aspects of my website rely on my dropdwon menu and the calculator.
+    I would have liked to add some more interactive peices to my webpage such as a game or quiz. But because of the time it took to complete my calculator, I wasn't able to fully reach my goal. for this reason next session some ways I can help myself improve my chances of reaching my goal is better time management and efficiency.</p6>
+    
+
+
+
+<script src="interactive.js"></script>
+
+
+</body>
+</html>

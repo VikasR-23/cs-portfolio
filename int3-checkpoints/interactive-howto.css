@@ -1,0 +1,54 @@
+body {
+    background-image: linear-gradient( powderblue , white);
+
+   
+}
+
+h1{
+    text-align: center;
+    border: 12px solid powderblue
+    
+}
+
+u {
+    font-size: 30px;
+    font-weight: bold;
+   
+}
+
+p1 {
+    font-size: 20px;
+    
+}
+
+h4 {
+    font-size: 20px;
+      border: 10px solid powderblue
+}
+
+p2 {
+    font-size: 20px;
+  
+    
+
+}
+
+p4 {
+    font-size: 20px;
+}
+
+p3 {
+font-size:20px;
+}
+
+p5 {
+font-size:20px;
+}
+
+
+p6 {
+font-size:20px;
+font-weight:bold;
+}
+
+
